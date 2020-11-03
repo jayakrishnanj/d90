@@ -23,7 +23,6 @@
         "drush/drush": "^9.0.0"
     },
     "require-dev": {
-        "acquia/blt-require-dev": "11.x-dev"
     },
     "config": {
         "platform": {
