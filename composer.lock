@@ -979,16 +979,16 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "1.32.1",
+            "version": "1.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "8abba7131ed4c89c1e8fc6dca0d05a4b6d0b2749"
+                "reference": "49f4ce174ed83764e3389ddb75c4758772435243"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/8abba7131ed4c89c1e8fc6dca0d05a4b6d0b2749",
-                "reference": "8abba7131ed4c89c1e8fc6dca0d05a4b6d0b2749",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/49f4ce174ed83764e3389ddb75c4758772435243",
+                "reference": "49f4ce174ed83764e3389ddb75c4758772435243",
                 "shasum": ""
             },
             "require": {
@@ -997,6 +997,9 @@
                 "symfony/console": "^3.4 || ^4.0",
                 "symfony/filesystem": "^2.7 || ^3.4 || ^4.0",
                 "twig/twig": "^1.41 || ^2.12"
+            },
+            "conflict": {
+                "drush/drush": "< 10.3.2"
             },
             "bin": [
                 "bin/dcg"
@@ -1020,7 +1023,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal code generator",
-            "time": "2020-07-15T06:08:04+00:00"
+            "time": "2020-10-11T16:56:42+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -5994,11 +5997,17 @@
         },
         {
             "name": "drupal/lightning_layout",
-            "version": "dev-2.x",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_layout.git",
-                "reference": "f6cb58d2b0698fceb1d4591c6a527eb4343dd869"
+                "reference": "8.x-2.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/lightning_layout-8.x-2.7.zip",
+                "reference": "8.x-2.7",
+                "shasum": "7b44c28dc3910678966d38eff10baa69460f66c7"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -6013,7 +6022,7 @@
                 "drupal/layout_library": "^1.0-beta1",
                 "drupal/lightning_core": "4.* || 5.*",
                 "drupal/panelizer": "^4.1 || ^5.0",
-                "drupal/panels": "4.6 || 4.x-dev",
+                "drupal/panels": "4.4 || 4.x-dev",
                 "drupal/simple_gmap": "^3.0"
             },
             "require-dev": {
@@ -6029,15 +6038,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.7+2-dev",
-                    "datestamp": "1595612258",
+                    "version": "8.x-2.7",
+                    "datestamp": "1593609347",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drupal-scaffold": {
@@ -6141,8 +6147,7 @@
             "homepage": "https://www.drupal.org/project/lightning_layout",
             "support": {
                 "source": "https://git.drupalcode.org/project/lightning_layout"
-            },
-            "time": "2020-07-24T17:20:26+00:00"
+            }
         },
         {
             "name": "drupal/lightning_media",
@@ -7279,39 +7284,34 @@
         },
         {
             "name": "drupal/panels",
-            "version": "4.6.0",
+            "version": "4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/panels.git",
-                "reference": "8.x-4.6"
+                "reference": "8.x-4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/panels-8.x-4.6.zip",
-                "reference": "8.x-4.6",
-                "shasum": "6430436a4d8fb64f8c113729dd92505a1e46b794"
+                "url": "https://ftp.drupal.org/files/projects/panels-8.x-4.4.zip",
+                "reference": "8.x-4.4",
+                "shasum": "5fca771d5a6d25dc955192cab95a603f00cde8ee"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
-                "drupal/ctools": ">=3.0.0",
-                "drupal/jquery_ui_droppable": "^1.2"
+                "drupal/core": "^8.3",
+                "drupal/ctools": ">=3.0.0"
             },
             "require-dev": {
-                "drupal/jquery_ui_droppable": "*",
-                "drupal/page_manager": "^4"
+                "drupal/page_manager": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.6",
-                    "datestamp": "1585870866",
+                    "version": "8.x-4.4",
+                    "datestamp": "1553565784",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "branch-alias": {
-                    "dev-8.x-4.x": "4.x-dev"
                 },
                 "patches_applied": {
                     "2878684 - Use String.match to correlate regions when switching Layouts in Panels IPE": "https://www.drupal.org/files/issues/panels-ipe-2878684-3.patch"
